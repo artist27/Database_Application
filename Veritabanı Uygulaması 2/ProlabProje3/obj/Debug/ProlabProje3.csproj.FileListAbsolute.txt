@@ -1,0 +1,26 @@
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.Form1.resources
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.Properties.Resources.resources
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.csproj.GenerateResource.Cache
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\bin\Debug\ProlabProje3.exe.config
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\bin\Debug\ProlabProje3.exe
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\bin\Debug\ProlabProje3.pdb
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\bin\Debug\EntityFramework.dll
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\bin\Debug\EntityFramework.xml
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.exe
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.pdb
+C:\Users\cem\Documents\Visual Studio 2012\Projects\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.csprojResolveAssemblyReference.cache
+C:\Users\cem\documents\visual studio 2012\Projects\ProlabProje3\ProlabProje3\bin\Debug\webcam_capture.dll
+D:\format sonrasi\ders1\ProlabProje3\ProlabProje3\bin\Debug\ProlabProje3.exe.config
+D:\format sonrasi\ders1\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.exe
+D:\format sonrasi\ders1\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.pdb
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\bin\Debug\ProlabProje3.exe.config
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.exe
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.pdb
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\bin\Debug\ProlabProje3.exe
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\bin\Debug\ProlabProje3.pdb
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\bin\Debug\EntityFramework.dll
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\bin\Debug\EntityFramework.xml
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.csprojResolveAssemblyReference.cache
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.Form1.resources
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.Properties.Resources.resources
+D:\DERSLERİM\6. DÖNEM\prolab2\ProlabProje3\ProlabProje3\obj\Debug\ProlabProje3.csproj.GenerateResource.Cache

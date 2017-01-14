@@ -1,0 +1,83 @@
+C:\Users\acer\AppData\Local\Temporary Projects\proje\bin\Debug\proje.exe
+C:\Users\acer\AppData\Local\Temporary Projects\proje\bin\Debug\proje.pdb
+C:\Users\acer\AppData\Local\Temporary Projects\proje\obj\x86\Debug\proje.Form1.resources
+C:\Users\acer\AppData\Local\Temporary Projects\proje\obj\x86\Debug\proje.Properties.Resources.resources
+C:\Users\acer\AppData\Local\Temporary Projects\proje\obj\x86\Debug\proje.csproj.GenerateResource.Cache
+C:\Users\acer\AppData\Local\Temporary Projects\proje\obj\x86\Debug\proje.exe
+C:\Users\acer\AppData\Local\Temporary Projects\proje\obj\x86\Debug\proje.pdb
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\proje.exe
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\proje.pdb
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\ProLab_Proje3.Form1.resources
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\ProLab_Proje3.Form2.resources
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\ProLab_Proje3.Form3.resources
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\ProLab_Proje3.Form4.resources
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\ProLab_Proje3.Form5.resources
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\ProLab_Proje3.Form6.resources
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\proje.Properties.Resources.resources
+C:\Users\acer\Desktop\c# dili\proje\proje\obj\x86\Debug\proje.csproj.GenerateResource.Cache
+C:\Users\acer\Desktop\c# dili\proje\proje\bin\Debug\proje.exe
+C:\Users\acer\Desktop\c# dili\proje\proje\bin\Debug\proje.pdb
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\proje.exe
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\proje.pdb
+C:\Users\acer\Desktop\c# dili\APROJE\proje\bin\Debug\proje.exe
+C:\Users\acer\Desktop\c# dili\APROJE\proje\bin\Debug\proje.pdb
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\proje.csprojResolveAssemblyReference.cache
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form1.resources
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form2.resources
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form3.resources
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form4.resources
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form5.resources
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form6.resources
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\proje.Properties.Resources.resources
+C:\Users\acer\Desktop\c# dili\APROJE\proje\obj\x86\Debug\proje.csproj.GenerateResource.Cache
+C:\Users\acer\Desktop\c# dili\APROJE\proje\bin\Debug\baris.accdb
+C:\Users\acer\Desktop\c# dili\APROJE\proje\bin\Debug\proje.exe.config
+C:\Users\acer\Desktop\c# dili\APROJE\proje\bin\Debug\son.accdb
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\bin\Debug\proje.exe.config
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\proje.exe
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\proje.pdb
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\bin\Debug\proje.exe
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\bin\Debug\proje.pdb
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\proje.csprojResolveAssemblyReference.cache
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form1.resources
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form2.resources
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form3.resources
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form4.resources
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form5.resources
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Form6.resources
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\proje.Properties.Resources.resources
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\obj\x86\Debug\proje.csproj.GenerateResource.Cache
+C:\Users\pc-27\Desktop\APROJE(1)\APROJE\proje\bin\Debug\vt.accdb
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\bin\Debug\proje.exe.config
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\proje.exe
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\proje.pdb
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\bin\Debug\proje.exe
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\bin\Debug\proje.pdb
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\proje.csprojResolveAssemblyReference.cache
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\proje.Properties.Resources.resources
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\proje.csproj.GenerateResource.Cache
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\bin\Debug\vt.accdb
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Ögrenci.resources
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Ders.resources
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Not.resources
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Bolum.resources
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\ProLab_Proje3.OgretimUyesi.resources
+C:\Users\pc-27\Desktop\APROJE\APROJE\proje\obj\x86\Debug\ProLab_Proje3.Giris.resources
+C:\Users\pc-27\Desktop\PROJE 3\proje\bin\Debug\proje.exe.config
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\proje.exe
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\proje.pdb
+C:\Users\pc-27\Desktop\PROJE 3\proje\bin\Debug\vt.accdb
+C:\Users\pc-27\Desktop\PROJE 3\proje\bin\Debug\proje.exe
+C:\Users\pc-27\Desktop\PROJE 3\proje\bin\Debug\proje.pdb
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\proje.csprojResolveAssemblyReference.cache
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\ProLab_Proje3.Giris.resources
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\ProLab_Proje3.Ögrenci.resources
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\ProLab_Proje3.Ders.resources
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\ProLab_Proje3.Not.resources
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\ProLab_Proje3.Bolum.resources
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\ProLab_Proje3.OgretimUyesi.resources
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\proje.Properties.Resources.resources
+C:\Users\pc-27\Desktop\PROJE 3\proje\obj\x86\Debug\proje.csproj.GenerateResource.Cache
+C:\Users\pc-27\Desktop\ders\4. DÖNEM\prolab II proje 3\proje\bin\Debug\proje.exe.config
+C:\Users\pc-27\Desktop\ders\4. DÖNEM\prolab II proje 3\proje\obj\x86\Debug\proje.exe
+C:\Users\pc-27\Desktop\ders\4. DÖNEM\prolab II proje 3\proje\obj\x86\Debug\proje.pdb

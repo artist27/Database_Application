@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KocaeliUniversitesiDBModelStoreContainer" CdmEntityContainer="KocaeliUniversitesiDBEntities">
+    <EntitySetMapping Name="AcedemicMembers">
+      <EntityTypeMapping TypeName="KocaeliUniversitesiDBModel.AcedemicMember">
+        <MappingFragment StoreEntitySet="AcedemicMember">
+          <ScalarProperty Name="AcedemicMemberId" ColumnName="AcedemicMemberId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="RegisterNumber" ColumnName="RegisterNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="KocaeliUniversitesiDBModel.Department">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="FacultyId" ColumnName="FacultyId" />
+          <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Faculties">
+      <EntityTypeMapping TypeName="KocaeliUniversitesiDBModel.Faculty">
+        <MappingFragment StoreEntitySet="Faculties">
+          <ScalarProperty Name="FacultyId" ColumnName="FacultyId" />
+          <ScalarProperty Name="FacultyName" ColumnName="FacultyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="KocaeliUniversitesiDBModel.Group">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="LessonId" ColumnName="LessonId" />
+          <ScalarProperty Name="AcedemicMemberId" ColumnName="AcedemicMemberId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lessons">
+      <EntityTypeMapping TypeName="KocaeliUniversitesiDBModel.Lesson">
+        <MappingFragment StoreEntitySet="Lessons">
+          <ScalarProperty Name="LessonId" ColumnName="LessonId" />
+          <ScalarProperty Name="LessonName" ColumnName="LessonName" />
+          <ScalarProperty Name="LessonCode" ColumnName="LessonCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notes">
+      <EntityTypeMapping TypeName="KocaeliUniversitesiDBModel.Note">
+        <MappingFragment StoreEntitySet="Notes">
+          <ScalarProperty Name="StudentLessonId" ColumnName="StudentLessonId" />
+          <ScalarProperty Name="Vize1" ColumnName="Vize1" />
+          <ScalarProperty Name="Vize2" ColumnName="Vize2" />
+          <ScalarProperty Name="Final" ColumnName="Final" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="KocaeliUniversitesiDBModel.Student">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Tc" ColumnName="Tc" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AcedemicMemberLessons" TypeName="KocaeliUniversitesiDBModel.AcedemicMemberLessons" StoreEntitySet="AcedemicMemberLessons">
+      <EndProperty Name="AcedemicMember">
+        <ScalarProperty Name="AcedemicMemberId" ColumnName="AcedemicMemberId" />
+      </EndProperty>
+      <EndProperty Name="Lessons">
+        <ScalarProperty Name="LessonId" ColumnName="LessonId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="DepartmentAcedemicMember" TypeName="KocaeliUniversitesiDBModel.DepartmentAcedemicMember" StoreEntitySet="DepartmentAcedemicMember">
+      <EndProperty Name="AcedemicMember">
+        <ScalarProperty Name="AcedemicMemberId" ColumnName="AcedemicMemberId" />
+      </EndProperty>
+      <EndProperty Name="Departments">
+        <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="DepartmentLessons" TypeName="KocaeliUniversitesiDBModel.DepartmentLessons" StoreEntitySet="DepartmentLessons">
+      <EndProperty Name="Departments">
+        <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+      </EndProperty>
+      <EndProperty Name="Lessons">
+        <ScalarProperty Name="LessonId" ColumnName="LessonId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="KocaeliUniversitesiDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentLessons">
+      <EntityTypeMapping TypeName="KocaeliUniversitesiDBModel.StudentLesson">
+        <MappingFragment StoreEntitySet="StudentLessons">
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="StudentLessonId" ColumnName="StudentLessonId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AlinanDersleriGetir" FunctionName="KocaeliUniversitesiDBModel.Store.AlinanDersleriGetir">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="KocaeliUniversitesiDBModel.AlinanDersleriGetir_Result">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LessonName" ColumnName="LessonName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="VizeFinal" FunctionName="KocaeliUniversitesiDBModel.Store.VizeFinal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="KocaeliUniversitesiDBModel.VizeFinal_Result">
+          <ScalarProperty Name="Vize1" ColumnName="Vize1" />
+          <ScalarProperty Name="Vize2" ColumnName="Vize2" />
+          <ScalarProperty Name="Final" ColumnName="Final" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="VizeFinalGetir" FunctionName="KocaeliUniversitesiDBModel.Store.VizeFinalGetir">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="KocaeliUniversitesiDBModel.VizeFinalGetir_Result">
+          <ScalarProperty Name="Vize1" ColumnName="Vize1" />
+          <ScalarProperty Name="Vize2" ColumnName="Vize2" />
+          <ScalarProperty Name="Final" ColumnName="Final" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

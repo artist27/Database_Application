@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KocaeliUniversitesiDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="KocaeliUniversitesiDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="AcedemicMembers" EntityType="KocaeliUniversitesiDBModel.AcedemicMember" />
+    <EntitySet Name="Departments" EntityType="KocaeliUniversitesiDBModel.Department" />
+    <EntitySet Name="Faculties" EntityType="KocaeliUniversitesiDBModel.Faculty" />
+    <EntitySet Name="Groups" EntityType="KocaeliUniversitesiDBModel.Group" />
+    <EntitySet Name="Lessons" EntityType="KocaeliUniversitesiDBModel.Lesson" />
+    <EntitySet Name="Notes" EntityType="KocaeliUniversitesiDBModel.Note" />
+    <EntitySet Name="Students" EntityType="KocaeliUniversitesiDBModel.Student" />
+    <AssociationSet Name="FK_Groups_AcedemicMember" Association="KocaeliUniversitesiDBModel.FK_Groups_AcedemicMember">
+      <End Role="AcedemicMember" EntitySet="AcedemicMembers" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Departments_Faculties" Association="KocaeliUniversitesiDBModel.FK_Departments_Faculties">
+      <End Role="Faculties" EntitySet="Faculties" />
+      <End Role="Departments" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Groups_Departments" Association="KocaeliUniversitesiDBModel.FK_Groups_Departments">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Groups" EntitySet="Groups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Students_Departments" Association="KocaeliUniversitesiDBModel.FK_Students_Departments">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Students" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="AcedemicMemberLessons" Association="KocaeliUniversitesiDBModel.AcedemicMemberLessons">
+      <End Role="AcedemicMember" EntitySet="AcedemicMembers" />
+      <End Role="Lessons" EntitySet="Lessons" />
+    </AssociationSet>
+    <AssociationSet Name="DepartmentAcedemicMember" Association="KocaeliUniversitesiDBModel.DepartmentAcedemicMember">
+      <End Role="AcedemicMember" EntitySet="AcedemicMembers" />
+      <End Role="Departments" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="DepartmentLessons" Association="KocaeliUniversitesiDBModel.DepartmentLessons">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Lessons" EntitySet="Lessons" />
+    </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="KocaeliUniversitesiDBModel.sysdiagram" />
+    <AssociationSet Name="FK_Groups_Lessons" Association="KocaeliUniversitesiDBModel.FK_Groups_Lessons">
+      <End Role="Lesson" EntitySet="Lessons" />
+      <End Role="Group" EntitySet="Groups" />
+    </AssociationSet>
+    <EntitySet Name="StudentLessons" EntityType="KocaeliUniversitesiDBModel.StudentLesson" />
+    <AssociationSet Name="FK_StudentLessons_Groups" Association="KocaeliUniversitesiDBModel.FK_StudentLessons_Groups">
+      <End Role="Group" EntitySet="Groups" />
+      <End Role="StudentLesson" EntitySet="StudentLessons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentLessons_Students" Association="KocaeliUniversitesiDBModel.FK_StudentLessons_Students">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="StudentLesson" EntitySet="StudentLessons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notes_StudentLessons" Association="KocaeliUniversitesiDBModel.FK_Notes_StudentLessons">
+      <End Role="StudentLesson" EntitySet="StudentLessons" />
+      <End Role="Note" EntitySet="Notes" />
+    </AssociationSet>
+    <FunctionImport Name="AlinanDersler" ReturnType="Collection(KocaeliUniversitesiDBModel.AlinanDersler_Result)">
+      <Parameter Name="Number" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AlinanDersleriGetir" ReturnType="Collection(KocaeliUniversitesiDBModel.AlinanDersleriGetir_Result)">
+      <Parameter Name="Number" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="VizeFinal" ReturnType="Collection(KocaeliUniversitesiDBModel.VizeFinal_Result)">
+      <Parameter Name="Number" Mode="In" Type="String" />
+      <Parameter Name="lessonname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="VizeFinalGetir" ReturnType="Collection(KocaeliUniversitesiDBModel.VizeFinalGetir_Result)">
+      <Parameter Name="Number" Mode="In" Type="String" />
+      <Parameter Name="lessonname" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="AcedemicMember">
+    <Key>
+      <PropertyRef Name="AcedemicMemberId" />
+    </Key>
+    <Property Name="AcedemicMemberId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="LastName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="RegisterNumber" Type="String" MaxLength="4" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="Groups" Relationship="KocaeliUniversitesiDBModel.FK_Groups_AcedemicMember" FromRole="AcedemicMember" ToRole="Groups" />
+    <NavigationProperty Name="Lessons" Relationship="KocaeliUniversitesiDBModel.AcedemicMemberLessons" FromRole="AcedemicMember" ToRole="Lessons" />
+    <NavigationProperty Name="Departments" Relationship="KocaeliUniversitesiDBModel.DepartmentAcedemicMember" FromRole="AcedemicMember" ToRole="Departments" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentId" />
+    </Key>
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FacultyId" Type="Int32" />
+    <Property Name="DepartmentCode" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <NavigationProperty Name="Faculty" Relationship="KocaeliUniversitesiDBModel.FK_Departments_Faculties" FromRole="Departments" ToRole="Faculties" />
+    <NavigationProperty Name="Groups" Relationship="KocaeliUniversitesiDBModel.FK_Groups_Departments" FromRole="Departments" ToRole="Groups" />
+    <NavigationProperty Name="Students" Relationship="KocaeliUniversitesiDBModel.FK_Students_Departments" FromRole="Departments" ToRole="Students" />
+    <NavigationProperty Name="AcedemicMembers" Relationship="KocaeliUniversitesiDBModel.DepartmentAcedemicMember" FromRole="Departments" ToRole="AcedemicMember" />
+    <NavigationProperty Name="Lessons" Relationship="KocaeliUniversitesiDBModel.DepartmentLessons" FromRole="Departments" ToRole="Lessons" />
+  </EntityType>
+  <EntityType Name="Faculty">
+    <Key>
+      <PropertyRef Name="FacultyId" />
+    </Key>
+    <Property Name="FacultyId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FacultyName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Departments" Relationship="KocaeliUniversitesiDBModel.FK_Departments_Faculties" FromRole="Faculties" ToRole="Departments" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="AcedemicMemberId" Type="Int32" />
+    <Property Name="DepartmentId" Type="Int32" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AcedemicMember" Relationship="KocaeliUniversitesiDBModel.FK_Groups_AcedemicMember" FromRole="Groups" ToRole="AcedemicMember" />
+    <NavigationProperty Name="Department" Relationship="KocaeliUniversitesiDBModel.FK_Groups_Departments" FromRole="Groups" ToRole="Departments" />
+    <Property Type="Int32" Name="LessonId" />
+    <NavigationProperty Name="Lesson" Relationship="KocaeliUniversitesiDBModel.FK_Groups_Lessons" FromRole="Group" ToRole="Lesson" />
+    <NavigationProperty Name="StudentLessons" Relationship="KocaeliUniversitesiDBModel.FK_StudentLessons_Groups" FromRole="Group" ToRole="StudentLesson" />
+  </EntityType>
+  <EntityType Name="Lesson">
+    <Key>
+      <PropertyRef Name="LessonId" />
+    </Key>
+    <Property Name="LessonId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="LessonName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LessonCode" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+    <NavigationProperty Name="AcedemicMembers" Relationship="KocaeliUniversitesiDBModel.AcedemicMemberLessons" FromRole="Lessons" ToRole="AcedemicMember" />
+    <NavigationProperty Name="Departments" Relationship="KocaeliUniversitesiDBModel.DepartmentLessons" FromRole="Lessons" ToRole="Departments" />
+    <NavigationProperty Name="Groups" Relationship="KocaeliUniversitesiDBModel.FK_Groups_Lessons" FromRole="Lesson" ToRole="Group" />
+  </EntityType>
+  <EntityType Name="Note">
+    <Key>
+      <PropertyRef Name="StudentLessonId" />
+    </Key>
+    <Property Name="StudentLessonId" Type="Int32" Nullable="false" />
+    <Property Name="Vize1" Type="Int32" />
+    <Property Name="Vize2" Type="Int32" />
+    <Property Name="Final" Type="Int32" />
+    <NavigationProperty Name="StudentLesson" Relationship="KocaeliUniversitesiDBModel.FK_Notes_StudentLessons" FromRole="Note" ToRole="StudentLesson" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Tc" Type="String" MaxLength="11" Unicode="false" FixedLength="true" />
+    <Property Name="Number" Type="String" MaxLength="9" Unicode="false" FixedLength="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+    <Property Name="DepartmentId" Type="Int32" />
+    <NavigationProperty Name="Department" Relationship="KocaeliUniversitesiDBModel.FK_Students_Departments" FromRole="Students" ToRole="Departments" />
+    <NavigationProperty Name="StudentLessons" Relationship="KocaeliUniversitesiDBModel.FK_StudentLessons_Students" FromRole="Student" ToRole="StudentLesson" />
+  </EntityType>
+  <Association Name="FK_Groups_AcedemicMember">
+    <End Role="AcedemicMember" Type="KocaeliUniversitesiDBModel.AcedemicMember" Multiplicity="0..1" />
+    <End Role="Groups" Type="KocaeliUniversitesiDBModel.Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AcedemicMember">
+        <PropertyRef Name="AcedemicMemberId" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="AcedemicMemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Departments_Faculties">
+    <End Role="Faculties" Type="KocaeliUniversitesiDBModel.Faculty" Multiplicity="0..1" />
+    <End Role="Departments" Type="KocaeliUniversitesiDBModel.Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculties">
+        <PropertyRef Name="FacultyId" />
+      </Principal>
+      <Dependent Role="Departments">
+        <PropertyRef Name="FacultyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Groups_Departments">
+    <End Role="Departments" Type="KocaeliUniversitesiDBModel.Department" Multiplicity="0..1" />
+    <End Role="Groups" Type="KocaeliUniversitesiDBModel.Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="DepartmentId" />
+      </Principal>
+      <Dependent Role="Groups">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Students_Departments">
+    <End Role="Departments" Type="KocaeliUniversitesiDBModel.Department" Multiplicity="0..1" />
+    <End Role="Students" Type="KocaeliUniversitesiDBModel.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="DepartmentId" />
+      </Principal>
+      <Dependent Role="Students">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AcedemicMemberLessons">
+    <End Role="AcedemicMember" Type="KocaeliUniversitesiDBModel.AcedemicMember" Multiplicity="*" />
+    <End Role="Lessons" Type="KocaeliUniversitesiDBModel.Lesson" Multiplicity="*" />
+  </Association>
+  <Association Name="DepartmentAcedemicMember">
+    <End Role="AcedemicMember" Type="KocaeliUniversitesiDBModel.AcedemicMember" Multiplicity="*" />
+    <End Role="Departments" Type="KocaeliUniversitesiDBModel.Department" Multiplicity="*" />
+  </Association>
+  <Association Name="DepartmentLessons">
+    <End Role="Departments" Type="KocaeliUniversitesiDBModel.Department" Multiplicity="*" />
+    <End Role="Lessons" Type="KocaeliUniversitesiDBModel.Lesson" Multiplicity="*" />
+  </Association>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Groups_Lessons">
+    <End Type="KocaeliUniversitesiDBModel.Lesson" Role="Lesson" Multiplicity="0..1" />
+    <End Type="KocaeliUniversitesiDBModel.Group" Role="Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lesson">
+        <PropertyRef Name="LessonId" />
+      </Principal>
+      <Dependent Role="Group">
+        <PropertyRef Name="LessonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="StudentLesson">
+    <Key>
+      <PropertyRef Name="StudentLessonId" />
+    </Key>
+    <Property Type="Int32" Name="StudentLessonId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="GroupId" />
+    <Property Type="Int32" Name="StudentId" />
+    <NavigationProperty Name="Group" Relationship="KocaeliUniversitesiDBModel.FK_StudentLessons_Groups" FromRole="StudentLesson" ToRole="Group" />
+    <NavigationProperty Name="Student" Relationship="KocaeliUniversitesiDBModel.FK_StudentLessons_Students" FromRole="StudentLesson" ToRole="Student" />
+    <NavigationProperty Name="Note" Relationship="KocaeliUniversitesiDBModel.FK_Notes_StudentLessons" FromRole="StudentLesson" ToRole="Note" />
+  </EntityType>
+  <Association Name="FK_StudentLessons_Groups">
+    <End Type="KocaeliUniversitesiDBModel.Group" Role="Group" Multiplicity="0..1" />
+    <End Type="KocaeliUniversitesiDBModel.StudentLesson" Role="StudentLesson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Group">
+        <PropertyRef Name="GroupId" />
+      </Principal>
+      <Dependent Role="StudentLesson">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentLessons_Students">
+    <End Type="KocaeliUniversitesiDBModel.Student" Role="Student" Multiplicity="0..1" />
+    <End Type="KocaeliUniversitesiDBModel.StudentLesson" Role="StudentLesson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="StudentLesson">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notes_StudentLessons">
+    <End Type="KocaeliUniversitesiDBModel.StudentLesson" Role="StudentLesson" Multiplicity="1" />
+    <End Type="KocaeliUniversitesiDBModel.Note" Role="Note" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="StudentLesson">
+        <PropertyRef Name="StudentLessonId" />
+      </Principal>
+      <Dependent Role="Note">
+        <PropertyRef Name="StudentLessonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="AlinanDersler_Result">
+    <Property Type="Int32" Name="StudentId" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Tc" Nullable="true" MaxLength="11" />
+    <Property Type="String" Name="Number" Nullable="true" MaxLength="9" />
+    <Property Type="Binary" Name="Photo" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="11" />
+    <Property Type="Int32" Name="DepartmentId" Nullable="true" />
+    <Property Type="Int32" Name="StudentLessonId" Nullable="false" />
+    <Property Type="Int32" Name="GroupId" Nullable="true" />
+    <Property Type="Int32" Name="StudentId1" Nullable="true" />
+    <Property Type="Int32" Name="AcedemicMemberId" Nullable="true" />
+    <Property Type="Int32" Name="DepartmentId1" Nullable="true" />
+    <Property Type="Int32" Name="GroupId1" Nullable="false" />
+    <Property Type="Int32" Name="LessonId" Nullable="true" />
+    <Property Type="Int32" Name="LessonId1" Nullable="false" />
+    <Property Type="String" Name="LessonName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LessonCode" Nullable="true" MaxLength="4" />
+  </ComplexType>
+  <ComplexType Name="AlinanDersleriGetir_Result">
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="LessonName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="VizeFinal_Result">
+    <Property Type="Int32" Name="Vize1" Nullable="true" />
+    <Property Type="Int32" Name="Vize2" Nullable="true" />
+    <Property Type="Int32" Name="Final" Nullable="true" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="VizeFinalGetir_Result">
+    <Property Type="Int32" Name="Vize1" Nullable="true" />
+    <Property Type="Int32" Name="Vize2" Nullable="true" />
+    <Property Type="Int32" Name="Final" Nullable="true" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="10" />
+  </ComplexType>
+</Schema>

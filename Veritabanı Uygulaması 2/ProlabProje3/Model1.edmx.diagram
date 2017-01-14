@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6c7f2b1d4a92486e98a3e414753e4d07" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="KocaeliUniversitesiDBModel.AcedemicMember" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KocaeliUniversitesiDBModel.Department" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KocaeliUniversitesiDBModel.Faculty" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KocaeliUniversitesiDBModel.Group" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KocaeliUniversitesiDBModel.Lesson" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KocaeliUniversitesiDBModel.Note" Width="1.5" PointX="9.375" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KocaeliUniversitesiDBModel.Student" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.FK_Groups_AcedemicMember" ManuallyRouted="false" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.FK_Departments_Faculties" ManuallyRouted="false" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.FK_Groups_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.FK_Students_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.AcedemicMemberLessons" ManuallyRouted="false" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.DepartmentAcedemicMember" ManuallyRouted="false" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.DepartmentLessons" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="KocaeliUniversitesiDBModel.sysdiagram" Width="1.5" PointX="11.886917682311925" PointY="28.558156250304616" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.FK_Groups_Lessons" />
+        <EntityTypeShape EntityType="KocaeliUniversitesiDBModel.StudentLesson" Width="1.5" PointX="7.625" PointY="7.375" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.FK_StudentLessons_Groups" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.FK_StudentLessons_Students" />
+        <AssociationConnector Association="KocaeliUniversitesiDBModel.FK_Notes_StudentLessons" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
